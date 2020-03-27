@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>More Steel</name>
+  <author>Neceros</author>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>neceros.moresteel</packageId>
+  <description>Change how much steel drops when you mine it from mountains and hills.</description>
+</ModMetaData>

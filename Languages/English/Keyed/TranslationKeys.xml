@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<MSMultiplyAmountLabel>Mined steel yield</MSMultiplyAmountLabel>
+  <MSMultiplyAmountEndLabel>per mined chunk (+/- colonist's skills.)</MSMultiplyAmountEndLabel>
+  <MSStackWarning>WARNING: You must have a mod which increases your stack sizes (like OgreStack, or StackXXL) or you will get errors and your yield will be capped at 75!</MSStackWarning>
+  <MSRestartWarning>You must restart if you make any changes.</MSRestartWarning>
+  <MSTitle>More Steel</MSTitle>
+  <MSOnlyInGame>You can only change these settings from within game</MSOnlyInGame>
+</LanguageData>
