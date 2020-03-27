@@ -2,3 +2,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\More Steel\Assemblie
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\More Steel\Source\MoreSteel\obj\Debug\MoreSteel.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\More Steel\Source\MoreSteel\obj\Debug\MoreSteel.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\More Steel\Source\MoreSteel\obj\Debug\MoreSteel.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreSteel\Assemblies\MoreSteel.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreSteel\Source\MoreSteel\obj\Debug\MoreSteel.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreSteel\Source\MoreSteel\obj\Debug\MoreSteel.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MoreSteel\Source\MoreSteel\obj\Debug\MoreSteel.dll

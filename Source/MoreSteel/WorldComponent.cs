@@ -14,13 +14,11 @@ namespace MoreSteel
     {
       base.FinalizeInit();
 
-      MoreSteelModSettings.OriginalSteelAmount = DefDatabase<ThingDef>.GetNamed("MineableSteel").building.mineableYield;
-      UpdateAllChanges();
-    }
-
-    public void UpdateAllChanges()
-    {
-      DefDatabase<ThingDef>.GetNamed("MineableSteel").building.mineableYield = (int)Math.Floor(MoreSteelModSettings.OriginalSteelAmount * MoreSteelModSettings.multiplyMS);
+      if(!(MoreSteelModSettings.OriginalSteelAmount > 0))
+      {
+        MoreSteelModSettings.OriginalSteelAmount = DefDatabase<ThingDef>.GetNamed("MineableSteel").building.mineableYield;
+        DefDatabase<ThingDef>.GetNamed("MineableSteel").building.mineableYield = (int)Math.Floor(MoreSteelModSettings.OriginalSteelAmount * MoreSteelModSettings.multiplyMS);
+      }
     }
   }
 }

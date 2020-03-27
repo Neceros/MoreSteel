@@ -33,10 +33,8 @@ namespace MoreSteel
       Listing_Standard listing = new Listing_Standard();
       listing.Begin(inRect);
 
-      if (MoreSteelModSettings.OriginalSteelAmount >= 1)
+      if (Current.ProgramState == ProgramState.Playing)
       {
-        listing.Label("MSRestartWarning".Translate());
-        listing.Gap(36);
         listing.Label("MSMultiplyAmountLabel".Translate() + ": [" + MoreSteelModSettings.OriginalSteelAmount.ToString() + " x " + (MoreSteelModSettings.multiplyMS * 100).ToString() + "%] = " + (MoreSteelModSettings.OriginalSteelAmount * MoreSteelModSettings.multiplyMS).ToString() + " " + "MSMultiplyAmountEndLabel".Translate());
         MoreSteelModSettings.multiplyMS = RoundToNearestHalf(listing.Slider(MoreSteelModSettings.multiplyMS, 0f, 20f));
         if (MoreSteelModSettings.OriginalSteelAmount * MoreSteelModSettings.multiplyMS >= 75)
@@ -48,6 +46,11 @@ namespace MoreSteel
       }
 
       listing.End();
+
+      if (Current.ProgramState == ProgramState.Playing && MoreSteelModSettings.OriginalSteelAmount > 0)
+        UpdateAllChanges();
+
+
       base.DoSettingsWindowContents(inRect);
     }
 
@@ -59,6 +62,11 @@ namespace MoreSteel
     private float RoundToNearestHalf(float val)
     { 
       return (float)Math.Round(val * 2, MidpointRounding.AwayFromZero) / 2;
+    }
+
+    public void UpdateAllChanges()
+    {
+      DefDatabase<ThingDef>.GetNamed("MineableSteel").building.mineableYield = (int)Math.Floor(MoreSteelModSettings.OriginalSteelAmount * MoreSteelModSettings.multiplyMS);
     }
   }
 }
